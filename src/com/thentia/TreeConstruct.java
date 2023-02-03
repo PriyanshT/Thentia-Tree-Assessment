@@ -18,11 +18,13 @@ public class TreeConstruct {
         EdgePair ep1 = new EdgePair(node4, node5);
         EdgePair ep2 = new EdgePair(node5, node3);
         EdgePair ep3 = new EdgePair(root, node5);
-        EdgePair ep4 = new EdgePair(node2, root);
+        EdgePair ep4 = new EdgePair(node2, node5);
+        EdgePair ep5 = new EdgePair(node2, node7);
+        EdgePair ep6 = new EdgePair(node6, node2);
 
         // Adding edges to the ArrayList
         ArrayList<EdgePair> edgePairs = new ArrayList<>();
-        edgePairs.addAll(Arrays.asList(ep1, ep2, ep3, ep4));
+        edgePairs.addAll(Arrays.asList(ep1, ep2, ep3, ep4, ep5, ep6));
 
         // Generating the tree and printing it
         try {
